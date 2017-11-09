@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Tree-plotter 1.3.0</string>
+
+    <!--Array for the Navigation drawer list-->
+    <string-array name="nav_d_items">
+        <item>Home</item>
+        <item>Import/Export</item>
+        <item>Settings</item>
+        <item>About</item>
+        <item>Help</item>
+        <item>Version</item>
+    </string-array>
+
+    <!--Add button-->
+    <string name="Plus">+</string>
+
+    <!--content descriptions-->
+    <string name="Menu">Menu</string>
+    <string name="TrackOn">TrackMe</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+
+    <!--Header for add map page-->
+    <string name="HeaderAddMap">Plot-map Details</string>
+
+    <!--Locality Hint-->
+    <string name="LocalityHint">Locality</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!--For tracking button-->
+    <string name="StartT">Start Tracking</string>
+    <string name="StopT">Stop Tracking</string>
+
+    <!-- add map -->
+    <string name="AddMap">Add Map</string>
+
+    <!--Hints-->
+    <string name="MapName">Map name</string>
+    <string name="Owner">Owner\'s name</string>
+    <string name="MapType">Map type</string>
+    <string name="Address">Address</string>
+    <string name="date">Date dd/mm/yyyy</string>
+
+    <!--icon-->
+    <string name="icon">Icon</string>
+</resources>

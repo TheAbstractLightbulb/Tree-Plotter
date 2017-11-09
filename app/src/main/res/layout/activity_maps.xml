@@ -1,0 +1,106 @@
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/rlMaps"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/Orange">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="1.0"
+        tools:context="com.example.cohen.tree_plotter130.MapsActivity" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/menu_bar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/Start_Stop"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mr_media_play_light"
+            android:contentDescription="@string/TrackOn"
+            android:onClick="startStop" />
+
+        <ImageView
+            android:id="@+id/AddMarkerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/menu_bar"
+            android:layout_marginEnd="19dp"
+            android:layout_marginTop="12dp"
+            android:background="@android:drawable/ic_input_add"
+            android:contentDescription="@string/Plus"
+            android:onClick="addMarker" />
+
+
+        <ImageButton
+            android:id="@+id/pause"
+            android:onClick="pause"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_alignEnd="@+id/Start_Stop"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/ic_media_pause_light"
+            android:contentDescription="@string/pause"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:onClick="stop"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/Start_Stop"
+            android:layout_marginStart="34dp"
+            android:background="@drawable/quantum_ic_stop_grey600_48"
+            android:contentDescription="@string/stop"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/ReStart"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/pause"
+            android:background="@drawable/mr_media_play_light"
+            android:contentDescription="@string/TrackOn"
+            android:onClick="reStart"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
